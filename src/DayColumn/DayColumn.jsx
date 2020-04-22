@@ -1,5 +1,6 @@
 import React from 'react';
 import HourCell from '../HourCell/HourCell.jsx';
+import CurrentTimeLine from '../CurrentTimeLine/CurrentTimeLine.jsx'
 
 const arrOfHours = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23];
 
@@ -11,6 +12,7 @@ const DayColumn = ({ remindersPerDay, weekDay, handleOpenReminder, columnDate, h
             data-date={columnDate}
             key={weekDay}
             onClick={(e)=>handleCreate(e)}>
+               {new Date(+columnDate).getDate() === new Date().getDate() ? <CurrentTimeLine /> : null} 
             {arrOfHours.map((hour) =>
                 <HourCell
                     hour={hour}
