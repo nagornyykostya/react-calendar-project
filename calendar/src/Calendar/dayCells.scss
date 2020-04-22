@@ -1,12 +1,13 @@
 .day-cells {
   position: relative;
-  margin-top: 180px;
+  top: 175px;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  @include for-middle-down {
-    padding: 0 10px;
-  }
+  // @include for-middle-down {
+  //   padding: 0 10px;
+  // }
+  width: 100vw;
 }
 
 .day-column {
@@ -52,17 +53,17 @@
     border: 1px solid #b7b7b7;
     cursor: pointer;
 
-    @include for-middle-down {
-      font-size: 8px;
-      width: 50px;
-      overflow: hidden;
-    }
+    // @include for-middle-down {
+    //   font-size: 8px;
+    //   width: 50px;
+    //   overflow: hidden;
+    // }
 
-    @include for-small-down {
-      font-size: 8px;
-      width: 40px;
-      overflow: hidden;
-    }
+    // @include for-small-down {
+    //   font-size: 8px;
+    //   width: 40px;
+    //   overflow: hidden;
+    // }
 
     &:hover {
       box-shadow: 0px -2px 35px -11px #000000;
@@ -75,9 +76,9 @@
     color: black;
     font-weight: bold;
 
-    @include for-middle-down {
-      display: none;
-    }
+    // @include for-middle-down {
+    //   display: none;
+    // }
   }
 
   &__reminder-item-title {
@@ -102,9 +103,9 @@
     border-radius: 10px;
     font-size: 12px;
     padding: 2px 4px;
-    @include for-middle-down {
-      display: none;
-    }
+    // @include for-middle-down {
+    //   display: none;
+    // }
   }
 }
 
@@ -116,9 +117,9 @@
   flex: 1;
   margin-right: 30px;
 
-  @include for-middle-down {
-    margin-right: 0px;
-  }
+  // @include for-middle-down {
+  //   margin-right: 0px;
+  // }
 }
 
 .hours-column {
@@ -126,11 +127,11 @@
   flex-direction: column;
   color: grey;
 
-  @include for-middle-down {
-    position: absolute;
-    left: -23px;
-    top: 3px;
-  }
+  // @include for-middle-down {
+  //   position: absolute;
+  //   left: -23px;
+  //   top: 3px;
+  // }
 
   &__hour-cell {
     display: flex;
@@ -141,9 +142,9 @@
     width: 55px;
     height: 60px;
     font-size: 12px;
-    @include for-middle-down {
-      font-size: 8px;
+    // @include for-middle-down {
+    //   font-size: 8px;
 
-    }
+    // }
   }
 }

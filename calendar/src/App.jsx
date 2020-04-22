@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
-import NavigationBar from './NavigationBar/NavigationBar.jsx';
+import Calendar from './Calendar/Calendar.jsx';
 import './index.scss';
+
 
 const App = () => {
 
     return (
-        <div>
-            <NavigationBar />
-        </div>
+            <Calendar />
     );
 };
 export default App;

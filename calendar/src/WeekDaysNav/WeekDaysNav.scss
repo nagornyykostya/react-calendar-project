@@ -16,14 +16,14 @@
     flex: 1;
     justify-content: space-around;
     width: 100vw;
-    @include for-middle-down {
-      justify-content: space-between;
-      margin-left: 28px;
-    }
+    // @include for-middle-down {
+    //   justify-content: space-between;
+    //   margin-left: 28px;
+    // }
 
-    @include for-small-down {
-      margin-left: 0px;
-    }
+    // @include for-small-down {
+    //   margin-left: 0px;
+    // }
   }
   
 
@@ -42,10 +42,10 @@
     min-height: 50px;
     margin-top: 20px;
 
-    @include for-middle-down {
-      margin-left: 13px;
-      margin-right: 13px;
-    }
+    // @include for-middle-down {
+    //   margin-left: 13px;
+    //   margin-right: 13px;
+    // }
 
     &:last-child {
       margin-right: 70px;
@@ -67,9 +67,9 @@
     font-size: 12px;
     color: #3c4043;
 
-    @include for-middle-down {
-      display: none;
-    }
+    // @include for-middle-down {
+    //   display: none;
+    // }
   }
 
   &__day-of-week {
@@ -91,11 +91,11 @@
     color: #70757a;
 
 
-    @include for-middle-down {
-      font-size: 18px;
-      width: 25px;
-      height: 25px;
-    }
+    // @include for-middle-down {
+    //   font-size: 18px;
+    //   width: 25px;
+    //   height: 25px;
+    // }
     &_selected {
       background-color: #1a73e8;
       color: white;
