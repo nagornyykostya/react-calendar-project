@@ -4,6 +4,10 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "lint": "eslint src",
+    "lint-fix": "eslint src --fix",
+    "test": "jest",
+    "test:watch": "jest --watch",
     "start": "webpack-dev-server --open",
     "build": "webpack -p"
   },
@@ -28,6 +32,7 @@
     "eslint-plugin-react": "^7.19.0",
     "eslint-plugin-react-hooks": "^2.5.0",
     "html-webpack-plugin": "^3.2.0",
+    "jest": "^25.4.0",
     "mini-css-extract-plugin": "^0.9.0",
     "prettier": "2.0.5",
     "sass-loader": "^8.0.2",
