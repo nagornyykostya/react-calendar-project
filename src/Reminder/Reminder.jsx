@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import { getDuration, getMinutesStart } from './remindersGetters.js';
 
 const Reminder = ({ reminderObj, reminderIndex, handleOpenReminder }) => {
@@ -32,3 +33,9 @@ const Reminder = ({ reminderObj, reminderIndex, handleOpenReminder }) => {
 }
 
 export default Reminder;
+
+Reminder.propTypes = {
+    reminderObj: PropTypes.object,
+    reminderIndex: PropTypes.number,
+    handleOpenReminder: PropTypes.func
+}

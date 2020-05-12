@@ -1,4 +1,6 @@
 import React from 'react';
+import PropTypes from "prop-types";
+
 
 const miliSecondsPerDay = 86400000;
 const monthes = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
@@ -28,3 +30,7 @@ const CurrentPeriodText = ({ currentWeekStart }) => {
 }
 
 export default CurrentPeriodText;
+
+CurrentPeriodText.propTypes = {
+    currentWeekStart: PropTypes.number
+}

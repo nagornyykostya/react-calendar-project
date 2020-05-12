@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import HourSideBarCell from '../HourSideBarCell/HourSideBarCell.jsx';
 import DayColumn from '../DayColumn/DayColumn.jsx';
 
@@ -13,9 +14,7 @@ const isSameDate = (item, currentWeekStart) =>
 
 const getRemindersArrFilteredByDay = (reminders, currentWeekStart) => reminders.filter((item) => isSameDate(item, currentWeekStart));
 
-const CallendarGrid = (props) => {
-
-    const { currentWeekStart, reminders, handleOpenReminder, handleCreate } = props;
+const CallendarGrid = ({ currentWeekStart, reminders, handleOpenReminder, handleCreate }) => {
 
     return (<>
         <div className="hours-column">
@@ -38,3 +37,11 @@ const CallendarGrid = (props) => {
 }
 
 export default CallendarGrid;
+
+CallendarGrid.propTypes = {
+    currentWeekStart: PropTypes.number,
+    reminders: PropTypes.array,
+    handleOpenReminder: PropTypes.func,
+    handleCreate: PropTypes.func
+}
+

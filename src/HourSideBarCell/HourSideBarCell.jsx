@@ -1,10 +1,14 @@
-import React from 'react';
+import React from "react";
+import PropTypes from "prop-types";
 
-const HourSideBarCell = (props) => {
-    const { hour } = props;
-    return (
-        <div className="hours-column__hour-cell">{hour < 10 ? `0${hour}` : hour}:00</div>
-    )
-}
+const HourSideBarCell = ({ hour }) => (
+  <div className="hours-column__hour-cell">
+    {hour < 10 ? `0${hour}` : hour}:00
+  </div>
+);
 
 export default HourSideBarCell;
+
+HourSideBarCell.propTypes = {
+    hour: PropTypes.number
+}

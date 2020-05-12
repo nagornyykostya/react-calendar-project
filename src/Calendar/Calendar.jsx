@@ -20,8 +20,8 @@ import "./dayCells.scss";
 const moment = require("moment");
 
 class Calendar extends Component {
-  constructor(props) {
-    super(props);
+  constructor() {
+    super();
 
     this.state = {
       currentWeekStart: getMonday(),

@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from "prop-types";
 import HourCell from '../HourCell/HourCell.jsx';
 import CurrentTimeLine from '../CurrentTimeLine/CurrentTimeLine.jsx'
 const moment = require("moment");
@@ -30,3 +31,11 @@ const DayColumn = ({ remindersPerDay, weekDay, handleOpenReminder, columnDate, h
 }
 
 export default DayColumn;
+
+DayColumn.propTypes = {
+    remindersPerDay: PropTypes.array,
+    weekDay: PropTypes.number,
+    handleOpenReminder: PropTypes.func,
+    columnDate: PropTypes.number,
+    handleCreate: PropTypes.func
+}
